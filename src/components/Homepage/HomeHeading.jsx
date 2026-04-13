@@ -15,14 +15,14 @@ const HomeHeading = () => {
         let mm = gsap.matchMedia()
 
         // mm.add("(min-width: 1023px)")
-        // tl.from(".textt",{
-        //     opacity: 0,
-        //     x: -10, 
-        //     delay: 1,
-        //     stagger: {
-        //         amount: 1.2
-        //     }
-        // })
+        tl.from(".textt",{
+            opacity: 0,
+            x: -10, 
+            delay: 1,
+            stagger: {
+                amount: 1.2
+            }
+        })
 
         tl.to(textRef.current,{
             width: "9vw",

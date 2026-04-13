@@ -22,7 +22,7 @@ const ServiceCard = ({ title, id, image1, image2, image3, image4, index, active,
     return (
         <div onMouseEnter={handleHover} onMouseLeave={handleLeave}  className={`transition-all ease-out duration-500 relative  w-full ${isActive ? "h-[16vw]": "h-[7vw]"}`}>
             <div  className={`cursor-pointer  h-[5vw]  text-black/40 w-full flex justify-center items-center  ${isActive ? "opacity-0": "opacity-100"} `}>
-                <h1 className="text-[5.4vw]">{title}</h1>
+                <h1 className="text-[5.4vw] cursor-pointer">{title}</h1>
                 <h5 className="text-[1vw] mt-[2vw]">{id}</h5>
 
             </div>

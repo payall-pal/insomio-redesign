@@ -23,7 +23,7 @@ const ContactMid = () => {
             opacity: 0,
             x: -10, 
             stagger: {
-                amount: 1.2
+                amount: 1.2,
             },
             scrollTrigger:{
                 trigger: ".contact",

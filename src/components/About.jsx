@@ -13,6 +13,8 @@ const About = () => {
 
     const popRef = useRef(null)
     gsap.registerPlugin(ScrollTrigger)
+
+    // About paragraph
     useGSAP(() => {
         const tl = gsap.timeline()
         tl.from('.rtext', {
@@ -49,6 +51,7 @@ const About = () => {
         }, 'anim')
     })
 
+    // moving div animation
     useGSAP(()=>{
 
         const tl = gsap.timeline()
@@ -130,20 +133,27 @@ const About = () => {
 
                 {/* Animated paragraph  */}
                 <div className='relative w-full uppercase  text-[3.3vw] font-light'>
-                <h4 className='rtext absolute left-[9vw] top-0'>Lorem ipsum, dolor sit consectetur</h4>
+
+                {/* <h4 className='rtext absolute left-[9vw] top-0'>Lorem ipsum, dolor sit consectetur</h4> */}
+                <h4 className='rtext absolute left-[9vw] top-0'>We help brands grow faster with</h4>
 
                 <div className='absolute left-0 top-[4vw] flex gap-[1.2vw]'>
-                    <h4 className='ltext '>delectus libero</h4>
-                    <h4 className=' text-(--text)'>venia inven possimus</h4>
+                    {/* <h4 className='ltext '>delectus libero</h4> */}
+                    <h4 className='ltext '>smart marketing,</h4>
+                    {/* <h4 className=' text-(--text)'>venia inven possimus</h4> */}
+                    <h4 className=' text-(--text)'>impactful design, and</h4>
                 </div>
-                <h4 className='absolute left-[15vw] top-[8vw]'>ipsum dolor delectus sit.</h4>
-                <h4 className='absolute left-[2vw] top-[12vw]'>voluptas consequuntur.</h4>
-                <h4 className='absolute left-[20vw] top-[16vw]'>inventore veniam!</h4>
+                {/* <h4 className='absolute left-[15vw] top-[8vw]'>ipsum dolor delectus sit.</h4> */}
+                <h4 className='absolute left-[15vw] top-[8vw]'>strategies that deliver</h4>
+                {/* <h4 className='absolute left-[2vw] top-[12vw]'>voluptas consequuntur.</h4> */}
+                <h4 className='absolute left-[2vw] top-[12vw]'>real results every time</h4>
+                {/* <h4 className='absolute left-[20vw] top-[16vw]'>inventore veniam!</h4> */}
+                <h4 className='absolute left-[20vw] top-[16vw]'>consistently!</h4>
                 </div>
 
                 {/* MovingImg  */}
                 <div >
-                    <img className='movableImg h-[9vw] w-[13.2vw] object-cover z-30 absolute right-[20vw] top-[22%]' src={image} alt="Broken" />
+                    <img className='movableImg h-[9vw] w-[13.2vw] object-cover z-30 rounded-b-md absolute right-[20vw] top-[22%]' src={image} alt="Broken" />
                 </div>
             
             </div>
