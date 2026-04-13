@@ -51,12 +51,17 @@ const About = () => {
         }, 'anim')
     })
 
+    
     // moving div animation
     useGSAP(()=>{
 
         const tl = gsap.timeline()
+
+        const mm = gsap.matchMedia()
+
+        // mm.add("(min-width: 1023px)", ()=>{})
         tl.to('.movableImg', {
-            x:108,
+            x: 56,
             duration:4,
             scrollTrigger: {
                 trigger: '.movableImg',
